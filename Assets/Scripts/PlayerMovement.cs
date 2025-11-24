@@ -58,13 +58,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (isIdle)
         {
-            rb.linearVelocity = Vector2.zero; 
+            rb.linearVelocity = Vector2.zero;
+            anim.SetBool("isRunning", false);
+            Debug.Log("not running");
         }
         else
         {
+            anim.SetBool("isRunning", true);
             lastMoveDir = moveDirection;
             rb.linearVelocity = new Vector2(moveDirection.x * moveSpeed, rb.linearVelocityY);
             anim.SetFloat("horizontalMovement", moveDirection.x);
+            Debug.Log("running");
         }
     }
 }
