@@ -182,6 +182,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916db41134188a74dbdf32491ec658e6
+      internalID: -126593098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain (16x16) 1_4
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 155
+        width: 48
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14696e9e912a1b043a6bbdb5c28abd56
+      internalID: -104903273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -199,6 +243,8 @@ TextureImporter:
       Terrain (16x16) 1_0: -19754199
       Terrain (16x16) 1_1: -1176095425
       Terrain (16x16) 1_2: 2077645082
+      Terrain (16x16) 1_3: -126593098
+      Terrain (16x16) 1_4: -104903273
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private PlayerInput playerInput;
     private Vector2 moveDirection;
-    private Vector2 lastMoveDir;
+    private Vector2 lastMoveDir = new Vector2(1, 0);
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private Transform groundCheck;
@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (isIdle)
         {
-            rb.linearVelocity = Vector2.zero;
+            rb.linearVelocity = new Vector2(0, rb.linearVelocityY);
             anim.SetBool("isRunning", false);
             Debug.Log("not running");
         }
