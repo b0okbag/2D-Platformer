@@ -1,4 +1,5 @@
 using UnityEngine;
+using Unity.Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
+        Camera.main.orthographicSize = 0.5f;
         offset = transform.position - playerTransform.position;
         camHalfHeight = Camera.main.orthographicSize;
         camHalfWidth = camHalfHeight * Camera.main.aspect;
